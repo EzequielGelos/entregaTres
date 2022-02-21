@@ -71,9 +71,6 @@ header {
       margin-top: 3rem; }
     .container .contenido .video {
       margin-top: 3rem; }
-      .container .contenido .video video {
-        width: 40rem;
-        height: 20rem; }
 
 /* base*/
 /* mapas */
@@ -403,8 +400,6 @@ header {
     width: 100%; }
   .container .nav > ul > li > a {
     margin: 1rem; }
-  .container .nav span a {
-    font-size: 3rem; }
   .container .carrusel {
     flex-flow: column wrap;
     justify-content: center;
@@ -433,8 +428,6 @@ header {
     width: 100%; }
   .containerNosotros .nav > ul > li > a {
     margin: 1rem; }
-  .containerNosotros .nav span a {
-    font-size: 3rem; }
   .containerNosotros .aboutUsPrincipal .aboutUsUno .aboutUs {
     font-size: 4rem;
     margin-top: 2.5rem; }
@@ -470,8 +463,6 @@ header {
     width: 100%; }
   .containerProductos .nav > ul > li > a {
     margin: 1rem; }
-  .containerProductos .nav span a {
-    font-size: 3rem; }
   .containerProductos main h2 {
     font-size: 4rem;
     text-align: center; }
@@ -494,8 +485,6 @@ header {
     width: 100%; }
   .containerLocales .nav > ul > li > a {
     margin: 1rem; }
-  .containerLocales .nav span a {
-    font-size: 3rem; }
   .containerLocales .localesPrincipales .tituloLocales h2 {
     font-size: 4.5rem; }
   .containerLocales .localesPrincipales .nombresLocales .localUno p {

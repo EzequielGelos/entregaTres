@@ -58,9 +58,7 @@
     .video{
         @extend %flex;
         margin-top: 3rem;
-        video{
-            @include sizes (40rem,20rem);
-        }
+        
     }
 }
 }
