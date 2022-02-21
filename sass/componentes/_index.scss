@@ -25,8 +25,7 @@
     /* CARRUSEL */
 .containerCarrusel{
     grid-area: carrusel;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem 3rem;
 }
 .carousel-item{
     .imagenesProductosUno{
@@ -36,11 +35,13 @@
 /*  IMAGENES */
 .imagenes{
     div{
-        grid-area: imagenes;
-        display: flex;
-        align-items: center;
-        img{
-            @include sizes (50%,60%);
+        a{
+            grid-area: imagenes;
+            display: flex;
+            align-items: center;
+            img{
+                @include sizes (50%,60%);
+        }
         }
     }
 }

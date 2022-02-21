@@ -49,16 +49,15 @@ header {
     grid-area: men; }
   .container .containerCarrusel {
     grid-area: carrusel;
-    margin-top: 2rem;
-    margin-bottom: 2rem; }
+    margin: 2rem 3rem; }
   .container .carousel-item .imagenesProductosUno {
     width: 35rem;
     height: 35rem; }
-  .container .imagenes div {
+  .container .imagenes div a {
     grid-area: imagenes;
     display: flex;
     align-items: center; }
-    .container .imagenes div img {
+    .container .imagenes div a img {
       width: 50%;
       height: 60%; }
   .container .contenido {
@@ -267,7 +266,7 @@ header {
       font-size: 4.5rem;
       color: #d1d1d1;
       font-family: 'Bebas Neue';
-      margin-bottom: 3rem;
+      margin: 3rem 3rem;
       font-weight: 1000; }
     .containerLocales .tituloLocales img {
       width: 5rem;
