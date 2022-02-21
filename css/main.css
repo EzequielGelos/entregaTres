@@ -394,13 +394,18 @@ header {
   .nav {
     flex-direction: column;
     justify-content: space-evenly;
-    align-content: center; }
+    align-items: center; }
   .nav > ul {
     width: 100%; }
   .nav > ul > li > a {
     margin: 1rem; }
   .nav span a {
-    font-size: 3rem; }
+    font-size: 6rem; }
+  .imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .imagenes {
     flex-direction: column;
     justify-content: center;

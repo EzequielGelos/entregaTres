@@ -3,20 +3,26 @@
 /* mediaqueries celular */
 @media screen and (max-width:360px){
     /* menu / index mediaqueries  */
-        .nav{
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-content: center;
-        }
-        .nav > ul{
-            width: 100%;
-        }
-        .nav > ul > li > a{
-            margin: 1rem;
-        }
-        .nav span a{
-            font-size: map-get($map: $medida-font, $key: 3rem);
-        }
+    .nav{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nav > ul{
+        width: 100%;
+    }
+    .nav > ul > li > a{
+        margin: 1rem;
+    }
+    .nav span a{
+        font-size: 6rem;
+    }
+    .imagenes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
         .imagenes{
             flex-direction: column;
