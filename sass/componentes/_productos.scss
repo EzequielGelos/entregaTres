@@ -30,14 +30,14 @@ h2{
     font-size: 4.2rem;
     color: $color-principal;
     font-family: 'Bebas Neue';
-    margin: 5rem;
+    margin-top: 5rem;
     font-weight: 1000;
 }
 .productos{
     grid-area: producto;
     column-gap: 10rem;
     @extend %flex;
-    margin: 2rem;
+    margin-top: 2rem;
     h3{
         color: $color-principal;
         text-align: center;
