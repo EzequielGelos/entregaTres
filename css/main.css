@@ -64,7 +64,7 @@ header {
     .container .contenido p {
       font-family: 'Bebas Neue', cursive;
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 3rem;
       color: #d1d1d1;
       margin-top: 3rem; }
     .container .contenido .video {
@@ -389,7 +389,7 @@ header {
 /* mapas */
 /* mediaqueries */
 /* mediaqueries celular */
-@media screen and (max-width: 260px) {
+@media screen and (max-width: 360px) {
   /* menu / index mediaqueries  */
   .nav {
     flex-direction: column;
@@ -401,23 +401,26 @@ header {
     margin: 1rem; }
   .nav span a {
     font-size: 6rem; }
-  .imagenes {
+  .container .containerCarrusel {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  .imagenes {
+  .container .imagenes {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 5rem; }
-    .imagenes img {
+    .container .imagenes img {
       width: 100%;
       height: 100%; }
-  .contenido p {
+  .container .contenido p {
     font-size: 1.5rem;
     text-align: center; }
-  .contenido video {
+  .container .contenido video {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 80%;
     width: 80%; }
   /* NOSOTROS HTML MEDIAQUERIES */
