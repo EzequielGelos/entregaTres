@@ -1,12 +1,20 @@
 @import "mapas";
 /* mediaqueries */ 
 /* mediaqueries celular */
-@media screen and (max-width:360px){
-    /* menu / index mediaqueries  */
+@media screen and (max-width:395px){
+    /* menu/ index mediaqueries  */
+    .container{
+        header{
+            h1{
+                a{
+                    font-size: 7rem;
+                }
+            }
+        }
         .nav{
             flex-direction: column;
             justify-content: space-evenly;
-            align-items: center;
+            align-content: center;
         }
         .nav > ul{
             width: 100%;
@@ -15,41 +23,59 @@
             margin: 1rem;
         }
         .nav span a{
-            font-size: 6rem;
+            font-size: 3rem;
         }
-        .container{
-            .containerCarrusel{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+        .carrusel{
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .imagenes{
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5rem;
+            img{
+                width: 100%;
+                height: 100%;
             }
-            .imagenes{
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin-top: 5rem;
-                img{
-                    width: 100%;
-                    height: 100%;
-                }
+        }
+        .contenido{
+            p{
+                font-size: 1.5rem;
             }
-            .contenido{
-                p{
-                    font-size: 1.5rem;
-                    text-align: center;
-                }
-                video{
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    height: 80%;
-                    width: 80%;
-                }
+            video{
+                height: 80%;
+                width: 80%;
             }
+        }
     }
-    /* NOSOTROS HTML MEDIAQUERIES */
-    .containerNosotros{
+
+
+/* NOSOTROS HTML MEDIAQUERIES */
+.containerNosotros{
+    header{
+        h1{
+            a{
+                font-size: 7rem;
+            }
+        }
+    }
+    .nav{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    .nav > ul{
+        width: 100%;
+    }
+    .nav > ul > li > a{
+        margin: 1rem;
+    }
+    .nav span a{
+        font-size: 3rem;
+    }
+    .aboutUsPrincipal{
         .aboutUsUno{
             .aboutUs{
                 font-size: 4rem;
@@ -60,7 +86,7 @@
                 text-align: center;
                 font-weight: 600 ;
                 width: 90%;
-                margin-left: 1rem;
+                margin-left: 1rem;    
                 span{
                     font-size: 1.2rem;
                 }
@@ -68,7 +94,7 @@
         }
         .prendas{
             h3{
-                font-size: map-get($map: $medida-font, $key: 3rem);
+                font-size: 3.5rem;
             }
             p{
                 font-size: 1.5rem;
@@ -80,7 +106,7 @@
         }
         .tabla{
             h3{
-                font-size: map-get($map: $medida-font, $key: 3rem);
+                font-size: 3.5rem;
             }
             img{
                 width: 80%;
@@ -88,217 +114,203 @@
             }
         }
     }
-    /* PRODUCTOS MEDIAQUERIES */
-    .containerProductos{
+}
+/* PRODUCTOS MEDIAQUERIES */
+.containerProductos{
+    header{
+        h1{
+            a{
+                font-size: 7rem;
+            }
+        }
+    }
+    .nav{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    .nav > ul{
+        width: 100%;
+    }
+    .nav > ul > li > a{
+        margin: 1rem;
+    }
+    .nav span a{
+        font-size: 3rem;
+    }
+    main{
         h2{
             font-size: 4rem;
             text-align: center;
         }
-        .stockPadre{
-            width: 50%;
-            display: flex;
-            justify-self: center;
-        }
-    }
-     /* LOCALES MEDIAQUERIES */
-     .containerLocales{
-         .tituloLocales{
-            h2{
-                font-size: 4.5rem;
-            }
-         }
-         .nombresLocales{
-             .localUno{
-                p{
-                    font-size: 2.8rem;
-                }
-             }
-         }
-     }
-      /* FAQS MEDIAQUERIES */
-      .containerFaqs{
-          .faqs{
-            h2{
-                font-size: 5.5rem;
-            }
-          }
-          .faqsContainer{
-            .faqsPregunta{
-                font-size: map-get($map: $medida-font, $key: 3rem);
-                font-style: italic;
-            }
-            .faqsUno{
-                font-size: 0.5rem;
-            }
-          }
-          .faqsDos{
-            .faqsPolicy{
-                font-size: 5rem;
-                font-style: italic;
-            }
-            .faqsParrafo{
-                font-size: 0.5rem;
-            }
-          }
-      }
-}
-
-/* mediaqueries tablet */
-
-@media screen and (max-width:600px){
-
-    /* MENU/INDEX MEDIAQUERIE */
-        .nav{
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-        .nav > ul{
-            width: 100%;
-        }
-        .nav > ul > li > a{
-            margin: 1rem;
-        }
-        .nav span a{
-            font-size: 6rem;
-        }
-        .imagenes{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    /* MEDIAQUERIE DE PRODUCTOS */
-    .containerProductos{
         .rowProductos{
-            flex-direction: column;
+            flex-flow: column wrap;
             align-items: center;
+            justify-content: center;
         }
-        .stockPadre{
+    }
+    .stockPadre{
             width: 50%;
             display: flex;
             justify-self: center;
+    }
+}
+/* LOCALES MEDIAQUERIES */
+.containerLocales{
+    header{
+        h1{
+            a{
+                font-size: 7rem;
+            }
         }
     }
-    /* NOSOTROS MEDIAQUERIE */
-    .containerNosotros{
-        .aboutUsUno{
-            .aboutUs{
-                font-size: 6rem;
-                font-style: italic;
-            }
-            .parrafoNosotros{
-                font-size: 1.5rem;
-                font-weight: 600;
-                span{
-                    font-size: 1.8rem;
-                }
-            }
-        }
-            .prendas{
-                h3{
-                    font-size: 6rem;
-                    font-style: italic;
-                    margin: 1rem;
-                }
-                p{
-                    font-size: 2rem;
-                    font-weight: 600;
-                }
-            }
-            .tabla{
-                h3{
-                    font-size: 6rem;
-                    font-style: italic;
-                    margin: 1rem;
-                }
-                img{
-                    width: 80%;
-                    height: 80%;
-                }
-            }
+    .nav{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
     }
-    /* locales mediaquerie */
-    .containerLocales{
+    .nav > ul{
+        width: 100%;
+    }
+    .nav > ul > li > a{
+        margin: 1rem;
+    }
+    .nav span a{
+        font-size: 3rem;
+    }
+    .localesPrincipales{
         .tituloLocales{
             h2{
-                font-size: 6rem;
-                font-style: italic;
+                font-size: 4.5rem;
             }
         }
         .nombresLocales{
             .localUno{
                 p{
-                    font-size: 2rem;
+                    font-size: 2.8rem;
                 }
             }
         }
     }
-    /* FAQS MEDIAQUERIE */
-    .containerFaqs{
+}
+/* FAQS MEDIAQUERIES */
+.containerFaqs{
+    header{
+        h1{
+            a{
+                font-size: 7rem;
+            }
+        }
+    }
+    .nav{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    .nav > ul{
+        width: 100%;
+    }
+    .nav > ul > li > a{
+        margin: 1rem;
+    }
+    .nav span a{
+        font-size: 3rem;
+    }
+    .faqsPrincipal{
         .faqs{
             h2{
-                font-size: 8rem;
-                font-style: italic;
+                font-size: 5.5rem;
             }
         }
         .faqsContainer{
             .faqsPregunta{
-                font-size: map-get($map: $medida-font, $key: 3rem);
+                font-size: 3.5rem;
                 font-style: italic;
             }
             .faqsUno{
-                text-align: center;
-                font-size: 1.5rem;
-                font-weight: 600;
+                font-size: 1rem;
             }
         }
         .faqsDos{
             .faqsPolicy{
-                font-size: 6.5rem;
+                font-size: 5rem;
                 font-style: italic;
             }
             .faqsParrafo{
-                text-align: center;
-                font-size: 1.5rem;
-                font-weight: 600;
+                font-size: 1rem;
             }
         }
     }
 }
-/* mediaqueries desktop */
-@media screen and (max-width:991px){
-    /* MENU/INDEX MEDIAQUERIE */
-        .nav{
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
+}
+/* mediaqueries tablet */
+
+@media screen and (max-width:600px){
+    /* MENU/INDEX MEDIAQUERIE TABLET */
+    header{
+        h1{
+            a{
+                font-size: 7rem;
+            }
         }
-        .nav > ul{
-            width: 100%;
-        }
-        .nav > ul > li > a{
-            margin: 1rem;
-        }
-        .nav span a{
-            font-size: 10rem;
-        }
-        .imagenes{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    /* PRODUCTOS MEDIAQUERIE */
-        .containerProductos{
-            .stockPadre{
-                width: 50%;
-                display: flex;
-                justify-self: center;
+    }
+    .nav{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    .nav > ul{
+        width: 100%;
+    }
+    .nav > ul > li > a{
+        margin: 1rem;
+    }
+    .nav span a{
+        font-size: 3rem;
+    }
+
+    /* productos */ 
+    .containerProductos{
+        main{
+            h2{
+                font-size: 4rem;
+                text-align: center;
+            }
+            .rowProductos{
+                flex-flow: column wrap;
+                align-items: center;
                 justify-content: center;
             }
         }
+        .stockPadre{
+                width: 50%;
+                display: flex;
+                justify-self: center;
+        }
+    }
 
-
-
+}
+/* mediaqueries desktop */
+@media screen and (max-width:990px){
+    header{
+        h1{
+            a{
+                font-size: 9rem;
+            }
+        }
+    }
+    .nav{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    .nav > ul{
+        width: 100%;
+    }
+    .nav > ul > li > a{
+        margin: 1rem;
+    }
+    .nav span a{
+        font-size: 3rem;
+    }
 }

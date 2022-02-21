@@ -7,10 +7,10 @@
 .nav{
     grid-area: men;
     display: flex;
-    align-items: center;
-    width: auto; 
-    justify-content: space-between;
-    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    
 }
 .nav > ul{
     display: flex;
@@ -33,7 +33,7 @@
     }
 }
 
-
+/*sub menu */ 
 
 .subMenu{
     position: absolute;
