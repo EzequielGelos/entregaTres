@@ -1,0 +1,87 @@
+/* base*/
+@import "../base/operaciones";
+@import "../base/variables";
+@import "../base/mapas";
+@import "../base/extends";
+@import "../base/mixins";
+
+
+/* NOSOTROS HTML */ 
+.containerNosotros{
+    display: grid;
+    min-height: $alturaprincipal - 300vh;
+    grid-template-areas: 
+    "h1"
+    "men"
+    "about"
+    "prendas"
+    "tabla"
+    "footer";
+    grid-template-rows:  auto auto auto auto auto auto;
+    header{
+        grid-area: h1;
+    }
+    nav{
+        grid-area: men;
+    }
+    .aboutUsUno{
+        grid-area: about;
+        p{
+            text-align: center;
+            font-size: 1.5rem;
+            color: $color-principal;
+            font-family: 'Bebas Neue', cursive;
+        }
+        h2{
+            text-align: center;
+            font-size: 5rem;
+            font-weight: 1000;
+            color: $color-principal;
+            font-style: italic;
+            font-family: 'Bebas Neue', cursive;
+            margin: 5rem;
+        }
+        p{
+            span{
+                font-size: 1.5rem;
+                font-weight: bolder;
+                font-family: 'Bebas Neue', cursive;
+            }
+        }
+    }
+        /* NUESTRAS PRENDAS */
+    .prendas{
+        grid-area: prendas;
+        h3{
+            @extend %estilos-h3;
+            font-size: map-get($map: $medida-font, $key: 3rem);
+            color: $color-principal;
+            font-family: 'Bebas Neue', cursive;
+            margin: 5rem;
+        }
+        p{
+            text-align: center;
+            font-size: 2rem;
+            color: $color-principal;
+            font-family: 'Bebas Neue', cursive;
+        }
+    }
+    /* TABLA DE TALLES */
+    .tabla{
+        grid-area: tabla;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            @extend %estilos-h3;
+            font-size: map-get($map: $medida-font, $key: 3rem);
+            color: $color-principal;
+            font-family: 'Bebas Neue', cursive;
+            margin: 5rem; 
+        }
+        img{
+            @include sizes (40%,50%);
+        }
+    }
+
+}

@@ -1,0 +1,74 @@
+/* base*/
+@import "../base/operaciones";
+@import "../base/variables";
+@import "../base/mapas";
+/* FAQS */
+.containerFaqs{
+    display: grid;
+    min-height: $alturaprincipal - 300vh;
+    grid-template-areas: 
+    "h1"
+    "men"
+    "titulo"
+    "pregunta1"
+    "pregunta2"
+    "footer";
+    grid-template-rows: auto auto auto auto auto auto;
+
+    header{
+        grid-area: h1;
+    }
+    nav{
+        grid-area: men;
+    }
+    .faqs{
+        grid-area: titulo;
+        text-align: center;
+        font-size: 7rem;
+        font-weight: 1000;
+        color: $color-principal;
+        font-style: italic;
+        
+    }
+    h2{
+        font-size: 6.5rem;
+        font-family: 'Bebas Neue', cursive;
+        margin: 3rem;
+    }
+    .faqsContainer{
+        grid-area: pregunta1;
+        .faqsPregunta{
+            text-align: center;
+            font-size: map-get($map: $medida-font, $key: 3rem);
+            font-weight: 1000;
+            color: $color-principal;
+            margin-bottom: 2rem;
+            font-family: 'Bebas Neue', cursive;
+        }
+        .faqsUno{
+            text-align: center;
+            font-size: 1.2rem;
+            color: $color-principal;
+            font-family: 'Bebas Neue', cursive;
+            margin: 3rem;
+        }
+    }
+    .faqsDos{
+        grid-area: pregunta2;
+        .faqsPolicy{
+            text-align: center;
+            font-size: map-get($map: $medida-font, $key: 3rem );
+            font-weight: 1000;
+            color: $color-principal;
+            margin-bottom: 2rem;
+            font-family: 'Bebas Neue', cursive;
+        }
+        .faqsParrafo{
+            text-align: center;
+            font-size: 1.2rem;
+            color: $color-principal;
+            font-family: 'Bebas Neue', cursive;
+            margin: 3rem;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@import "base/listas";
+body{
+    background-color: nth($colores, 4);
+}
+
+@import "base/variables";
+@import "base/mixins";
+@import "base/mapas";
+@import "base/operaciones.scss";
+@import "base/extends";
+@import "componentes/h1";
+@import "componentes/index";
+@import "componentes/productos";
+@import "componentes/footer";
+@import "componentes/nosotros";
+@import "componentes/locales";
+@import "componentes/faqs";
+@import "componentes/nav";
+@import "base/mediaqueries";
+
+
+

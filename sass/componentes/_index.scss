@@ -1,0 +1,64 @@
+/* base*/
+@import "../base/operaciones";
+@import "../base/variables";
+@import "../base/mixins";
+
+
+/*grid de index */
+.container{
+    display: grid;
+    min-height: $alturaprincipal - 300vh;
+    grid-template-areas:
+    "h1"
+    "men"
+    "carrusel"
+    "imagenes"
+    "contenido"
+    "footer";
+    grid-template-rows: auto auto auto auto auto auto ;
+    header{
+        grid-area: h1;
+    }
+    nav{
+        grid-area: men;
+    }
+    /* CARRUSEL */
+.containerCarrusel{
+    grid-area: carrusel;
+}
+.carousel-item{
+    .imagenesProductosUno{
+        @include sizes (35rem,35rem);
+    }
+}
+/*  IMAGENES */
+.imagenes{
+    div{
+        grid-area: imagenes;
+        display: flex;
+        align-items: center;
+        img{
+            @include sizes (50%,60%);
+        }
+    }
+}
+
+/* CONTENIDO */
+.contenido{
+    grid-area: contenido;
+    p{
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;
+        font-size: 1.5rem;
+        color: $color-principal;
+        margin-top: 3rem
+    }
+    .video{
+        @extend %flex;
+        margin-top: 3rem;
+        video{
+            @include sizes (40rem,20rem);
+        }
+    }
+}
+}

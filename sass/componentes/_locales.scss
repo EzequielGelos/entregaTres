@@ -1,0 +1,60 @@
+/* base*/
+@import "../base/operaciones";
+@import "../base/variables";
+@import "../base/extends";
+@import "../base/mixins";
+
+
+/*LOCALES HTML */ 
+.containerLocales{
+    display: grid;
+    min-height: $alturaprincipal - 300vh;
+    grid-template-areas: 
+    "h1"
+    "men"
+    "h2"
+    "locales"
+    "footer";
+    grid-template-rows:  auto auto auto auto auto;
+
+header{
+    grid-area: h1;
+}
+nav{
+    grid-area: men;
+}
+.tituloLocales{
+    grid-area: h2;
+    @extend %flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 1000;
+    font-style: italic;
+    h2 {
+        @extend %estilos-h3;
+        font-size: 4.5rem;
+        color: $color-principal;
+        font-family: 'Bebas Neue';
+        margin: 3rem;
+        font-weight: 1000;
+    }
+    img{
+        @include sizes (5rem,5rem);
+    }
+}
+.nombresLocales{
+    grid-area: locales;
+    p{
+        text-align: center;
+        font-size: 1.8rem;
+        color: $color-principal;
+        margin: 3rem;
+        font-family: 'Bebas Neue', cursive;
+    }
+    .localUno{
+        @extend %flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+}

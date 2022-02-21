@@ -1,0 +1,81 @@
+/* base*/
+@import "../base/operaciones";
+@import "../base/variables";
+@import "../base/mapas";
+@import "../base/extends";
+@import "../base/mixins";
+
+/* grid de productos + estilos de fuentes*/
+.containerProductos{
+    min-height: $alturaprincipal - 300vh;
+    display: grid;
+    grid-template-areas: 
+    "h1"
+    "men"
+    "h2"
+    "producto"
+    "stock"
+    "footer";
+    grid-template-rows: auto auto auto auto auto auto;
+
+header{
+    grid-area: h1;
+}
+nav{
+    grid-area: men;
+}
+h2{
+    grid-area: h2;
+    @extend %estilos-h3;
+    font-size: 4.2rem;
+    color: $color-principal;
+    font-family: 'Bebas Neue';
+    margin: 5rem;
+    font-weight: 1000;
+}
+.productos{
+    grid-area: producto;
+    column-gap: 10rem;
+    @extend %flex;
+    margin: 2rem;
+    h3{
+        color: $color-principal;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 1000;
+    }
+    img{
+        @include sizes(10rem,15rem);
+    }
+    p{
+        color: $color-principal;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 1000;
+    }
+}
+   /* STOCK  */
+   .stockPadre{
+    grid-area: stock;
+    margin-top: 5rem;
+    border: 1px white solid;
+    form{
+        fieldset{
+            color: $color-principal;
+            font-size: 2.5rem;
+            font-family: 'Bebas Neue', cursive;
+            .boton{
+                margin: 0.5rem;
+                padding: 1rem;
+            }
+            legend{
+                @extend %estilos-h3;
+                font-size: 2.5rem;
+                font-family: 'Bebas Neue', cursive;
+            }
+        }
+
+    }
+
+}
+}
