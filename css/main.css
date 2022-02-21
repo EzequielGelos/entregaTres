@@ -48,7 +48,9 @@ header {
   .container nav {
     grid-area: men; }
   .container .containerCarrusel {
-    grid-area: carrusel; }
+    grid-area: carrusel;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
   .container .carousel-item .imagenesProductosUno {
     width: 35rem;
     height: 35rem; }
