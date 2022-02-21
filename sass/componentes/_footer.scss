@@ -15,7 +15,7 @@
     .instagram{
         @extend %flex;
         align-content: center;
-        margin: 0rem 0rem 5rem 0rem;
+        margin-bottom: 5rem;
         img{
             @include sizes (3rem,3rem);
         }

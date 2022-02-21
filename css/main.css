@@ -155,7 +155,7 @@ header {
     font-family: 'Bebas Neue', cursive; }
   .footer .instagram {
     align-content: center;
-    margin: 0rem 0rem 5rem 0rem; }
+    margin-bottom: 5rem; }
     .footer .instagram img {
       width: 3rem;
       height: 3rem; }
