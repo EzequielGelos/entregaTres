@@ -40,7 +40,7 @@ body {
   text-decoration: none;
   color: #d1d1d1;
   font-family: 'Bebas Neue', cursive;
-  font-size: 2.1rem; }
+  font-size: 2.5rem; }
   .nav > ul > li > a:hover {
     background-color: #7c7b7b; }
 
@@ -458,7 +458,7 @@ header {
   .containerProductos .nav > ul {
     width: 100%; }
   .containerProductos .nav > ul > li > a {
-    margin: 1rem; }
+    margin: 12rem; }
   .containerProductos main h2 {
     font-size: 4rem;
     text-align: center; }
