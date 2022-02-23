@@ -7,7 +7,7 @@ body {
 /* mixin */
 /* mapas */
 /* extends */
-.containerProductos h2, .containerProductos .stockPadre form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
+.containerProductos h2, .containerProductos .stockPadre div form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
   text-align: center;
   font-style: italic; }
 
@@ -131,7 +131,7 @@ header {
 /* base*/
 /* mapas */
 /* extends */
-.containerProductos h2, .containerProductos .stockPadre form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
+.containerProductos h2, .containerProductos .stockPadre div form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
   text-align: center;
   font-style: italic; }
 
@@ -179,20 +179,23 @@ header {
     grid-area: stock;
     margin-top: 5rem;
     border: 1px white solid; }
-    .containerProductos .stockPadre form fieldset {
+    .containerProductos .stockPadre div form fieldset {
       color: #d1d1d1;
       font-size: 2.5rem;
       font-family: 'Bebas Neue', cursive; }
-      .containerProductos .stockPadre form fieldset .boton {
+      .containerProductos .stockPadre div form fieldset .boton {
         margin: 0.5rem;
         padding: 1rem; }
-      .containerProductos .stockPadre form fieldset legend {
+      .containerProductos .stockPadre div form fieldset legend {
         font-size: 2.5rem;
         font-family: 'Bebas Neue', cursive; }
+      .containerProductos .stockPadre div form fieldset .stock .label {
+        font-size: 1.8rem;
+        margin: 1rem; }
 
 /* mixin */
 /* extends */
-.containerProductos h2, .containerProductos .stockPadre form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
+.containerProductos h2, .containerProductos .stockPadre div form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
   text-align: center;
   font-style: italic; }
 
@@ -226,7 +229,7 @@ header {
 /* base*/
 /* mapas */
 /* extends */
-.containerProductos h2, .containerProductos .stockPadre form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
+.containerProductos h2, .containerProductos .stockPadre div form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
   text-align: center;
   font-style: italic; }
 
@@ -294,7 +297,7 @@ header {
 
 /* base*/
 /* extends */
-.containerProductos h2, .containerProductos .stockPadre form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
+.containerProductos h2, .containerProductos .stockPadre div form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
   text-align: center;
   font-style: italic; }
 

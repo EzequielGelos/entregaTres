@@ -59,23 +59,29 @@ h2{
     grid-area: stock;
     margin-top: 5rem;
     border: 1px white solid;
-    form{
-        fieldset{
-            color: $color-principal;
-            font-size: 2.5rem;
-            font-family: 'Bebas Neue', cursive;
-            .boton{
-                margin: 0.5rem;
-                padding: 1rem;
-            }
-            legend{
-                @extend %estilos-h3;
+    div{
+        form{
+            fieldset{
+                color: $color-principal;
                 font-size: 2.5rem;
                 font-family: 'Bebas Neue', cursive;
+                .boton{
+                    margin: 0.5rem;
+                    padding: 1rem;
+                }
+                legend{
+                    @extend %estilos-h3;
+                    font-size: 2.5rem;
+                    font-family: 'Bebas Neue', cursive;
+                 }
+                 .stock{
+                     .label{
+                         font-size: 1.8rem;
+                         margin: 1rem;
+                     }
+                 }
             }
         }
-
     }
-
 }
 }
