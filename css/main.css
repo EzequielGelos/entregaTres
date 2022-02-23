@@ -62,24 +62,23 @@ body {
   display: block; }
 
 header {
-  grid-area: h1; }
-  header h1 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5rem; }
-    header h1 a {
-      text-align: center;
-      color: #d1d1d1;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 800;
-      font-size: 8rem;
-      text-shadow: -5px -5px 5px #525151, 0px 4px 1px rgba(255, 250, 250, 0.5), 4px 4px 5px rgba(107, 107, 107, 0.7), 0px 0px 7px rgba(155, 155, 155, 0.4);
-      letter-spacing: 1.5rem;
-      word-spacing: 0.5rem;
-      text-decoration: none; }
-      header h1 a:hover {
-        text-decoration: none;
-        color: white; }
+  grid-area: h1;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  header h1 a {
+    text-align: center;
+    color: #d1d1d1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 8rem;
+    text-shadow: -5px -5px 5px #525151, 0px 4px 1px rgba(255, 250, 250, 0.5), 4px 4px 5px rgba(107, 107, 107, 0.7), 0px 0px 7px rgba(155, 155, 155, 0.4);
+    letter-spacing: 1.5rem;
+    word-spacing: 0.5rem;
+    text-decoration: none; }
+    header h1 a:hover {
+      text-decoration: none;
+      color: white; }
 
 /* base*/
 /* mixin */
@@ -178,7 +177,8 @@ header {
   .containerProductos .stockPadre {
     grid-area: stock;
     margin-top: 5rem;
-    border: 1px white solid; }
+    border: 1px white solid;
+    margin: 1rem; }
     .containerProductos .stockPadre div form fieldset {
       color: #d1d1d1;
       font-size: 2.5rem;
@@ -470,9 +470,9 @@ header {
     align-items: center;
     justify-content: center; }
   .containerProductos .stockPadre {
-    width: 50%;
     display: flex;
-    justify-self: center; }
+    justify-self: center;
+    width: 80%; }
   /* LOCALES MEDIAQUERIES */
   .containerLocales header h1 a {
     font-size: 7rem; }
