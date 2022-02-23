@@ -26,40 +26,51 @@
 .containerCarrusel{
     grid-area: carrusel;
     margin: 2rem 3rem;
-}
-.carousel-item{
-    .imagenesProductosUno{
-        @include sizes (35rem,35rem);
+    .carousel-item{
+        .imagenesProductosUno{
+            @include sizes (25rem,35rem);
+        }
     }
 }
 /*  IMAGENES */
 .imagenes{
+    grid-area: imagenes;
     div{
         a{
-            grid-area: imagenes;
             display: flex;
             align-items: center;
+            justify-content: center;
             img{
-                @include sizes (50%,60%);
+                @include sizes (45%,60%);
         }
         }
     }
 }
 
 /* CONTENIDO */
+
 .contenido{
     grid-area: contenido;
-    p{
-        font-family: 'Bebas Neue', cursive;
-        text-align: center;
-        font-size: 3rem;
-        color: $color-principal;
-        margin-top: 3rem
+    div{
+            p{
+                font-family: 'Bebas Neue', cursive;
+                text-align: center;
+                font-size: 3rem;
+                color: $color-principal;
+                margin-top: 3rem
+            }
+        }
+        div{
+            @extend %flex;
+                align-items: center;
+            .video{
+                height: 20rem;
+                width: 25rem;
+                margin-top: 3rem;
+            }
     }
-    .video{
-        @extend %flex;
-        margin-top: 3rem;
-        
-    }
+}
+.footer{
+    grid-area: footer;
 }
 }

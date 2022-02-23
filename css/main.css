@@ -1,6 +1,5 @@
 * {
-  font-size: 62.5%;
-  max-width: 100%; }
+  font-size: 62.5%; }
 
 body {
   background-color: black; }
@@ -12,9 +11,55 @@ body {
   text-align: center;
   font-style: italic; }
 
-.container .contenido .video, .containerProductos .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno, .subMenu li {
+.subMenu li, .container .contenido div, .containerProductos .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
   display: flex;
   justify-content: center; }
+
+/* bases */
+/* mapas */
+/* menu de todos los html */
+.nav {
+  grid-area: men;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly; }
+
+.nav > ul {
+  display: flex;
+  list-style-type: none;
+  width: 40%; }
+
+.nav > ul > li {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #d1d1d1; }
+
+.nav > ul > li > a {
+  text-decoration: none;
+  color: #d1d1d1;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.1rem; }
+  .nav > ul > li > a:hover {
+    background-color: #7c7b7b; }
+
+/*sub menu */
+.subMenu {
+  position: absolute;
+  background-color: #7c7b7b;
+  display: none;
+  list-style: none; }
+  .subMenu li a {
+    display: block;
+    padding: 0.5rem;
+    color: #d1d1d1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center; }
+
+.nav li:hover .subMenu {
+  display: block; }
 
 header {
   grid-area: h1; }
@@ -54,26 +99,34 @@ header {
   .container .containerCarrusel {
     grid-area: carrusel;
     margin: 2rem 3rem; }
-  .container .carousel-item .imagenesProductosUno {
-    width: 35rem;
-    height: 35rem; }
-  .container .imagenes div a {
-    grid-area: imagenes;
-    display: flex;
-    align-items: center; }
-    .container .imagenes div a img {
-      width: 50%;
-      height: 60%; }
+    .container .containerCarrusel .carousel-item .imagenesProductosUno {
+      width: 25rem;
+      height: 35rem; }
+  .container .imagenes {
+    grid-area: imagenes; }
+    .container .imagenes div a {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .container .imagenes div a img {
+        width: 45%;
+        height: 60%; }
   .container .contenido {
     grid-area: contenido; }
-    .container .contenido p {
+    .container .contenido div p {
       font-family: 'Bebas Neue', cursive;
       text-align: center;
       font-size: 3rem;
       color: #d1d1d1;
       margin-top: 3rem; }
-    .container .contenido .video {
-      margin-top: 3rem; }
+    .container .contenido div {
+      align-items: center; }
+      .container .contenido div .video {
+        height: 20rem;
+        width: 25rem;
+        margin-top: 3rem; }
+  .container .footer {
+    grid-area: footer; }
 
 /* base*/
 /* mapas */
@@ -82,7 +135,7 @@ header {
   text-align: center;
   font-style: italic; }
 
-.container .contenido .video, .containerProductos .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno, .subMenu li {
+.subMenu li, .container .contenido div, .containerProductos .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
   display: flex;
   justify-content: center; }
 
@@ -143,7 +196,7 @@ header {
   text-align: center;
   font-style: italic; }
 
-.container .contenido .video, .containerProductos .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno, .subMenu li {
+.subMenu li, .container .contenido div, .containerProductos .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
   display: flex;
   justify-content: center; }
 
@@ -177,7 +230,7 @@ header {
   text-align: center;
   font-style: italic; }
 
-.container .contenido .video, .containerProductos .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno, .subMenu li {
+.subMenu li, .container .contenido div, .containerProductos .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
   display: flex;
   justify-content: center; }
 
@@ -245,7 +298,7 @@ header {
   text-align: center;
   font-style: italic; }
 
-.container .contenido .video, .containerProductos .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno, .subMenu li {
+.subMenu li, .container .contenido div, .containerProductos .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
   display: flex;
   justify-content: center; }
 
@@ -341,57 +394,10 @@ header {
       font-family: 'Bebas Neue', cursive;
       margin-top: 3rem; }
 
-/* bases */
-/* mapas */
-/* menu de todos los html */
-.nav {
-  grid-area: men;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: space-evenly; }
-
-.nav > ul {
-  display: flex;
-  list-style-type: none;
-  width: 40%;
-  justify-content: space-evenly; }
-
-.nav > ul > li {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #d1d1d1; }
-
-.nav > ul > li > a {
-  text-decoration: none;
-  color: #d1d1d1;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 2.1rem; }
-  .nav > ul > li > a:hover {
-    background-color: #7c7b7b; }
-
-/*sub menu */
-.subMenu {
-  position: absolute;
-  background-color: #7c7b7b;
-  display: none;
-  list-style: none; }
-  .subMenu li a {
-    display: block;
-    padding: 0.5rem;
-    color: #d1d1d1;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    text-decoration: none;
-    text-align: center; }
-
-.nav li:hover .subMenu {
-  display: block; }
-
 /* mapas */
 /* mediaqueries */
 /* mediaqueries celular */
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 360px) {
   /* menu/ index mediaqueries  */
   .container header h1 a {
     font-size: 7rem; }
@@ -403,23 +409,10 @@ header {
     width: 100%; }
   .container .nav > ul > li > a {
     margin: 1rem; }
-  .container .carrusel {
+  .container .containerCarrusel .carrusel {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center; }
-  .container .imagenes {
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem; }
-    .container .imagenes img {
-      width: 100%;
-      height: 100%; }
-  .container .contenido p {
-    font-size: 1.5rem; }
-  .container .contenido video {
-    height: 80%;
-    width: 80%; }
   /* NOSOTROS HTML MEDIAQUERIES */
   .containerNosotros header h1 a {
     font-size: 7rem; }
@@ -531,8 +524,6 @@ header {
     width: 100%; }
   .nav > ul > li > a {
     margin: 1rem; }
-  .nav span a {
-    font-size: 3rem; }
   /* productos */
   .containerProductos main h2 {
     font-size: 4rem;
