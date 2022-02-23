@@ -48,7 +48,7 @@ h2{
         @include sizes(10rem,15rem);
     }
     p{
-        color: $color-principal;
+        color: $color-principal; 
         text-align: center;
         font-size: 1rem;
         font-weight: 1000;
