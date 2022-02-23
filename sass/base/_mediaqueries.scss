@@ -15,10 +15,11 @@
             flex-direction: column;
             justify-content: space-evenly;
             align-content: center;
+            
         }
         .nav > ul{
             width: 100%;
-        }
+        }   
         .nav > ul > li > a{
             margin: 1rem; 
         }
@@ -275,6 +276,7 @@
     }
     .nav > ul{
         width: 100%;
+        justify-content: space-evenly;
     }
     .nav > ul > li > a{
         margin: 1rem;
