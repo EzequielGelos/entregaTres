@@ -21,19 +21,20 @@
     nav{
         grid-area: men;
     }
-    .faqs{
-        grid-area: titulo;
-        text-align: center;
-        font-size: 7rem;
-        font-weight: 1000;
-        color: $color-principal;
-        font-style: italic;
-        
-    }
-    h2{
-        font-size: 6.5rem;
-        font-family: 'Bebas Neue', cursive;
-        margin-bottom: 3rem;
+    .faqsPrincipal{
+        .faqs{
+            grid-area: titulo;
+            text-align: center;
+            font-size: 7rem;
+            font-weight: 1000;
+            color: $color-principal;
+            font-style: italic;
+            h2{
+                font-size: 6.5rem;
+                font-family: 'Bebas Neue', cursive;
+                margin-bottom: 3rem;
+            
+        }
     }
     .faqsContainer{
         grid-area: pregunta1;
@@ -71,4 +72,5 @@
             margin-top: 3rem;
         }
     }
+}
 }

@@ -24,34 +24,36 @@ header{
 nav{
     grid-area: men;
 }
-h2{
-    grid-area: h2;
-    @extend %estilos-h3;
-    font-size: 4.2rem;
-    color: $color-principal;
-    font-family: 'Bebas Neue';
-    margin-top: 5rem;
-    font-weight: 1000;
-}
-.productos{
-    grid-area: producto;
-    column-gap: 10rem;
-    @extend %flex;
-    margin-top: 2rem;
-    h3{
+main{
+    h2{
+        grid-area: h2;
+        @extend %estilos-h3;
+        font-size: 4.2rem;
         color: $color-principal;
-        text-align: center;
-        font-size: 1.5rem;
+        font-family: 'Bebas Neue';
+        margin-top: 5rem;
         font-weight: 1000;
     }
-    img{
-        @include sizes(10rem,15rem);
-    }
-    p{
-        color: $color-principal; 
-        text-align: center;
-        font-size: 1rem;
-        font-weight: 1000;
+    .productos{
+        grid-area: producto;
+        column-gap: 10rem;
+        @extend %flex;
+        margin-top: 2rem;
+        h3{
+            color: $color-principal;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 1000;
+        }
+        img{
+            @include sizes(10rem,15rem);
+        }
+        p{
+            color: $color-principal; 
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 1000;
+        }
     }
 }
    /* STOCK  */

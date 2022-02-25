@@ -7,11 +7,11 @@ body {
 /* mixin */
 /* mapas */
 /* extends */
-.containerProductos h2, .containerProductos .stockPadre div form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
+.containerProductos main h2, .containerProductos .stockPadre div form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
   text-align: center;
   font-style: italic; }
 
-.subMenu li, .container .contenido div, .containerProductos .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
+.subMenu li, .container .contenido div, .containerProductos main .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
   display: flex;
   justify-content: center; }
 
@@ -130,11 +130,11 @@ header {
 /* base*/
 /* mapas */
 /* extends */
-.containerProductos h2, .containerProductos .stockPadre div form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
+.containerProductos main h2, .containerProductos .stockPadre div form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
   text-align: center;
   font-style: italic; }
 
-.subMenu li, .container .contenido div, .containerProductos .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
+.subMenu li, .container .contenido div, .containerProductos main .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
   display: flex;
   justify-content: center; }
 
@@ -150,26 +150,26 @@ header {
     grid-area: h1; }
   .containerProductos nav {
     grid-area: men; }
-  .containerProductos h2 {
+  .containerProductos main h2 {
     grid-area: h2;
     font-size: 4.2rem;
     color: #d1d1d1;
     font-family: 'Bebas Neue';
     margin-top: 5rem;
     font-weight: 1000; }
-  .containerProductos .productos {
+  .containerProductos main .productos {
     grid-area: producto;
     column-gap: 10rem;
     margin-top: 2rem; }
-    .containerProductos .productos h3 {
+    .containerProductos main .productos h3 {
       color: #d1d1d1;
       text-align: center;
       font-size: 1.5rem;
       font-weight: 1000; }
-    .containerProductos .productos img {
+    .containerProductos main .productos img {
       width: 10rem;
       height: 15rem; }
-    .containerProductos .productos p {
+    .containerProductos main .productos p {
       color: #d1d1d1;
       text-align: center;
       font-size: 1rem;
@@ -195,11 +195,11 @@ header {
 
 /* mixin */
 /* extends */
-.containerProductos h2, .containerProductos .stockPadre div form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
+.containerProductos main h2, .containerProductos .stockPadre div form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
   text-align: center;
   font-style: italic; }
 
-.subMenu li, .container .contenido div, .containerProductos .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
+.subMenu li, .container .contenido div, .containerProductos main .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
   display: flex;
   justify-content: center; }
 
@@ -229,11 +229,11 @@ header {
 /* base*/
 /* mapas */
 /* extends */
-.containerProductos h2, .containerProductos .stockPadre div form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
+.containerProductos main h2, .containerProductos .stockPadre div form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
   text-align: center;
   font-style: italic; }
 
-.subMenu li, .container .contenido div, .containerProductos .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
+.subMenu li, .container .contenido div, .containerProductos main .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
   display: flex;
   justify-content: center; }
 
@@ -297,11 +297,11 @@ header {
 
 /* base*/
 /* extends */
-.containerProductos h2, .containerProductos .stockPadre div form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
+.containerProductos main h2, .containerProductos .stockPadre div form fieldset legend, .containerNosotros .prendas h3, .containerNosotros .tabla h3, .containerLocales .tituloLocales h2 {
   text-align: center;
   font-style: italic; }
 
-.subMenu li, .container .contenido div, .containerProductos .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
+.subMenu li, .container .contenido div, .containerProductos main .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
   display: flex;
   justify-content: center; }
 
@@ -355,42 +355,42 @@ header {
     grid-area: h1; }
   .containerFaqs nav {
     grid-area: men; }
-  .containerFaqs .faqs {
+  .containerFaqs .faqsPrincipal .faqs {
     grid-area: titulo;
     text-align: center;
     font-size: 7rem;
     font-weight: 1000;
     color: #d1d1d1;
     font-style: italic; }
-  .containerFaqs h2 {
-    font-size: 6.5rem;
-    font-family: 'Bebas Neue', cursive;
-    margin-bottom: 3rem; }
-  .containerFaqs .faqsContainer {
+    .containerFaqs .faqsPrincipal .faqs h2 {
+      font-size: 6.5rem;
+      font-family: 'Bebas Neue', cursive;
+      margin-bottom: 3rem; }
+  .containerFaqs .faqsPrincipal .faqsContainer {
     grid-area: pregunta1; }
-    .containerFaqs .faqsContainer .faqsPregunta {
+    .containerFaqs .faqsPrincipal .faqsContainer .faqsPregunta {
       text-align: center;
       font-size: 3rem;
       font-weight: 1000;
       color: #d1d1d1;
       margin-bottom: 2rem;
       font-family: 'Bebas Neue', cursive; }
-    .containerFaqs .faqsContainer .faqsUno {
+    .containerFaqs .faqsPrincipal .faqsContainer .faqsUno {
       text-align: center;
       font-size: 1.2rem;
       color: #d1d1d1;
       font-family: 'Bebas Neue', cursive;
       margin-bottom: 3rem; }
-  .containerFaqs .faqsDos {
+  .containerFaqs .faqsPrincipal .faqsDos {
     grid-area: pregunta2; }
-    .containerFaqs .faqsDos .faqsPolicy {
+    .containerFaqs .faqsPrincipal .faqsDos .faqsPolicy {
       text-align: center;
       font-size: 3rem;
       font-weight: 1000;
       color: #d1d1d1;
       margin-bottom: 2rem;
       font-family: 'Bebas Neue', cursive; }
-    .containerFaqs .faqsDos .faqsParrafo {
+    .containerFaqs .faqsPrincipal .faqsDos .faqsParrafo {
       text-align: center;
       font-size: 1.2rem;
       color: #d1d1d1;
