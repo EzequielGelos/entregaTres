@@ -44,17 +44,23 @@ nav{
 }
 .nombresLocales{
     grid-area: locales;
-    p{
-        text-align: center;
-        font-size: 1.8rem;
-        color: $color-principal;
-        margin-top: 3rem;
-        font-family: 'Bebas Neue', cursive;
-    }
     .localUno{
         @extend %flex;
         align-items: center;
         flex-direction: column;
+        p{
+            text-align: center;
+            font-size: 1.8rem;
+            color: $color-principal;
+            margin-top: 3rem;
+            font-family: 'Bebas Neue', cursive;
+        }
+        .mapa{
+            height: 20rem;
+            width: 25rem;
+            margin-top: 3rem;
+        }
+
     }
 }
 }
