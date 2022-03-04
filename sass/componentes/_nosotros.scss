@@ -26,7 +26,7 @@
     }
     .aboutUsUno{
         grid-area: about;
-        padding: 8rem;
+        padding: 6rem;
         p{
             text-align: center;
             font-size: 1.5rem;
@@ -35,12 +35,12 @@
         }
         h2{
             text-align: center;
-            font-size: 5rem;
+            font-size: 6.5rem;
             font-weight: 1000;
             color: $color-principal;
             font-style: italic;
             font-family: 'Bebas Neue', cursive;
-            margin-top: 5rem;
+            margin-bottom: 3rem;
         }
         p{
             span{
@@ -53,7 +53,7 @@
         /* NUESTRAS PRENDAS */
     .prendas{
         grid-area: prendas;
-        padding: 8rem;
+        padding: 6rem;
         h3{
             @extend %estilos-h3;
             font-size: map-get($map: $medida-font, $key: 3rem);
