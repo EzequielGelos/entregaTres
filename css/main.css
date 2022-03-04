@@ -363,7 +363,7 @@ header {
       margin-bottom: 3rem; }
   .containerFaqs .faqsPrincipal .faqsContainer {
     grid-area: pregunta1;
-    padding: 8rem; }
+    padding: 5rem; }
     .containerFaqs .faqsPrincipal .faqsContainer .faqsPregunta {
       text-align: center;
       font-size: 3rem;
@@ -379,7 +379,7 @@ header {
       margin-bottom: 3rem; }
   .containerFaqs .faqsPrincipal .faqsDos {
     grid-area: pregunta2;
-    padding: 8rem; }
+    padding: 5rem; }
     .containerFaqs .faqsPrincipal .faqsDos .faqsPolicy {
       text-align: center;
       font-size: 3rem;

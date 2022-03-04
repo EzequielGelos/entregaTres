@@ -37,7 +37,7 @@
     }
     .faqsContainer{
         grid-area: pregunta1;
-        padding: 8rem;
+        padding: 5rem;
         .faqsPregunta{
             text-align: center;
             font-size: map-get($map: $medida-font, $key: 3rem);
@@ -56,7 +56,7 @@
     }
     .faqsDos{
         grid-area: pregunta2;
-        padding: 8rem;
+        padding: 5rem;
         .faqsPolicy{
             text-align: center;
             font-size: map-get($map: $medida-font, $key: 3rem );
