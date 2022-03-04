@@ -39,6 +39,7 @@ main{
         column-gap: 10rem;
         @extend %flex;
         margin-top: 2rem;
+        
         h3{
             color: $color-principal;
             text-align: center;
@@ -53,6 +54,11 @@ main{
             text-align: center;
             font-size: 1rem;
             font-weight: 1000;
+        }
+        .productoUno{
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
 }

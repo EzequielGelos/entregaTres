@@ -160,6 +160,8 @@ header {
       text-align: center;
       font-size: 1rem;
       font-weight: 1000; }
+    .containerProductos main .productos .productoUno:hover {
+      transform: scale(1.1); }
   .containerProductos .stockPadre {
     grid-area: stock;
     margin-top: 5rem;
