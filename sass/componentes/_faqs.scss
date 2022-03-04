@@ -33,22 +33,22 @@
                 font-size: 6.5rem;
                 font-family: 'Bebas Neue', cursive;
                 margin-bottom: 3rem;
-            
         }
     }
     .faqsContainer{
         grid-area: pregunta1;
+        padding: 8rem;
         .faqsPregunta{
             text-align: center;
             font-size: map-get($map: $medida-font, $key: 3rem);
             font-weight: 1000;
             color: $color-principal;
             margin-bottom: 2rem;
-            font-family: 'Bebas Neue', cursive;
+            font-family: 'Bebas Neue', cursive;;
         }
         .faqsUno{
             text-align: center;
-            font-size: 1.2rem;
+            font-size: 1.8rem;
             color: $color-principal;
             font-family: 'Bebas Neue', cursive;
             margin-bottom: 3rem;
@@ -56,6 +56,7 @@
     }
     .faqsDos{
         grid-area: pregunta2;
+        padding: 8rem;
         .faqsPolicy{
             text-align: center;
             font-size: map-get($map: $medida-font, $key: 3rem );
@@ -66,7 +67,7 @@
         }
         .faqsParrafo{
             text-align: center;
-            font-size: 1.2rem;
+            font-size: 1.8rem;
             color: $color-principal;
             font-family: 'Bebas Neue', cursive;
             margin-top: 3rem;

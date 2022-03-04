@@ -11,7 +11,7 @@ body {
   text-align: center;
   font-style: italic; }
 
-.subMenu li, .container .contenido div, .containerProductos main .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
+.container .contenido div, .containerProductos main .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
   display: flex;
   justify-content: center; }
 
@@ -44,23 +44,6 @@ body {
   font-size: 2.5rem; }
   .nav > ul > li > a:hover {
     color: white; }
-
-.subMenu {
-  position: absolute;
-  background-color: #7c7b7b;
-  display: none;
-  list-style: none; }
-  .subMenu li a {
-    display: block;
-    padding: 0.3rem;
-    color: #d1d1d1;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    text-decoration: none;
-    text-align: center; }
-
-.nav li:hover .subMenu {
-  display: block; }
 
 header {
   grid-area: h1;
@@ -137,7 +120,7 @@ header {
   text-align: center;
   font-style: italic; }
 
-.subMenu li, .container .contenido div, .containerProductos main .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
+.container .contenido div, .containerProductos main .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
   display: flex;
   justify-content: center; }
 
@@ -204,16 +187,16 @@ header {
   text-align: center;
   font-style: italic; }
 
-.subMenu li, .container .contenido div, .containerProductos main .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
+.container .contenido div, .containerProductos main .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
   display: flex;
   justify-content: center; }
 
 /*FOOTER */
 .footer {
   grid-area: footer;
-  margin-top: 2rem; }
+  margin-top: 3rem; }
   .footer span {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #d1d1d1;
     font-family: 'Bebas Neue', cursive; }
   .footer .instagram {
@@ -238,7 +221,7 @@ header {
   text-align: center;
   font-style: italic; }
 
-.subMenu li, .container .contenido div, .containerProductos main .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
+.container .contenido div, .containerProductos main .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
   display: flex;
   justify-content: center; }
 
@@ -307,7 +290,7 @@ header {
   text-align: center;
   font-style: italic; }
 
-.subMenu li, .container .contenido div, .containerProductos main .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
+.container .contenido div, .containerProductos main .productos, .footer span, .footer .instagram, .containerLocales .tituloLocales, .containerLocales .nombresLocales .localUno {
   display: flex;
   justify-content: center; }
 
@@ -373,7 +356,8 @@ header {
       font-family: 'Bebas Neue', cursive;
       margin-bottom: 3rem; }
   .containerFaqs .faqsPrincipal .faqsContainer {
-    grid-area: pregunta1; }
+    grid-area: pregunta1;
+    padding: 8rem; }
     .containerFaqs .faqsPrincipal .faqsContainer .faqsPregunta {
       text-align: center;
       font-size: 3rem;
@@ -383,12 +367,13 @@ header {
       font-family: 'Bebas Neue', cursive; }
     .containerFaqs .faqsPrincipal .faqsContainer .faqsUno {
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1.8rem;
       color: #d1d1d1;
       font-family: 'Bebas Neue', cursive;
       margin-bottom: 3rem; }
   .containerFaqs .faqsPrincipal .faqsDos {
-    grid-area: pregunta2; }
+    grid-area: pregunta2;
+    padding: 8rem; }
     .containerFaqs .faqsPrincipal .faqsDos .faqsPolicy {
       text-align: center;
       font-size: 3rem;
@@ -398,7 +383,7 @@ header {
       font-family: 'Bebas Neue', cursive; }
     .containerFaqs .faqsPrincipal .faqsDos .faqsParrafo {
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1.8rem;
       color: #d1d1d1;
       font-family: 'Bebas Neue', cursive;
       margin-top: 3rem; }
