@@ -239,7 +239,8 @@ header {
   .containerNosotros nav {
     grid-area: men; }
   .containerNosotros .aboutUsUno {
-    grid-area: about; }
+    grid-area: about;
+    padding: 8rem; }
     .containerNosotros .aboutUsUno p {
       text-align: center;
       font-size: 1.5rem;
@@ -258,7 +259,8 @@ header {
       font-weight: bolder;
       font-family: 'Bebas Neue', cursive; }
   .containerNosotros .prendas {
-    grid-area: prendas; }
+    grid-area: prendas;
+    padding: 8rem; }
     .containerNosotros .prendas h3 {
       font-size: 3rem;
       color: #d1d1d1;
@@ -422,17 +424,19 @@ header {
     width: 100%; }
   .containerNosotros .nav > ul > li > a {
     margin: 1rem; }
-  .containerNosotros .aboutUsPrincipal .aboutUsUno .aboutUs {
-    font-size: 4rem;
-    margin-top: 2.5rem; }
-  .containerNosotros .aboutUsPrincipal .aboutUsUno .parrafoNosotros {
-    font-size: 1rem;
-    text-align: center;
-    font-weight: 600;
-    width: 90%;
-    margin-left: 1rem; }
-    .containerNosotros .aboutUsPrincipal .aboutUsUno .parrafoNosotros span {
-      font-size: 1.2rem; }
+  .containerNosotros .aboutUsPrincipal .aboutUsUno {
+    padding: 0%; }
+    .containerNosotros .aboutUsPrincipal .aboutUsUno .aboutUs {
+      font-size: 4rem;
+      margin-top: 2.5rem; }
+    .containerNosotros .aboutUsPrincipal .aboutUsUno .parrafoNosotros {
+      font-size: 1rem;
+      text-align: center;
+      font-weight: 600;
+      width: 90%;
+      margin-left: 1rem; }
+      .containerNosotros .aboutUsPrincipal .aboutUsUno .parrafoNosotros span {
+        font-size: 1.2rem; }
   .containerNosotros .aboutUsPrincipal .prendas h3 {
     font-size: 3.5rem; }
   .containerNosotros .aboutUsPrincipal .prendas p {

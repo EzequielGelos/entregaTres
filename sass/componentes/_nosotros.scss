@@ -26,6 +26,7 @@
     }
     .aboutUsUno{
         grid-area: about;
+        padding: 8rem;
         p{
             text-align: center;
             font-size: 1.5rem;
@@ -52,6 +53,7 @@
         /* NUESTRAS PRENDAS */
     .prendas{
         grid-area: prendas;
+        padding: 8rem;
         h3{
             @extend %estilos-h3;
             font-size: map-get($map: $medida-font, $key: 3rem);
